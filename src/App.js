@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import './App.css';
+import Snowfall from 'react-snowfall';
 
 function App() {
   const navigate = useNavigate();
@@ -8,16 +9,19 @@ function App() {
   }
   return (
     <div className="app-wrapper">
-      <h1>Welcome to USTPage✌️</h1>
-      <h2
-        onClick={() => movePage("utpage")}
-        className="individual-page-utako">Utako's Page</h2>
-      <h2
-        onClick={() => movePage("swpage")}
-        className="individual-page-sawa">Sawa's Page</h2>
-      <h2
-        onClick={() => movePage("tkpage")}
-        className="individual-page-takumi">Takumi's Page</h2>
+      <Snowfall />
+      <h1 className="title">Welcome to USTPage✌️</h1>
+      <section className="flexbox">
+        <h2
+          onClick={() => movePage("utpage")}
+          className="individual-page-utako">Utako's Page</h2>
+        <h2
+          onClick={() => movePage("swpage")}
+          className="individual-page-sawa">Sawa's Page</h2>
+        <h2
+          onClick={() => movePage("tkpage")}
+          className="individual-page-takumi">Takumi's Page</h2>
+      </section>
     </div>
   );
 }
