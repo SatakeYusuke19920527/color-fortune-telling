@@ -2,7 +2,7 @@ import React from 'react'
 
 const UtPage = () => {
   return (
-    <div>UtPage</div>
+    <div></div>
   )
 }
 
