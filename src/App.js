@@ -12,7 +12,6 @@ function App() {
       <h2
         onClick={() => movePage("utpage")}
         className="individual-page-utako">Utako's Page</h2>
-      <hr />
       <h2
         onClick={() => movePage("swpage")}
         className="individual-page-sawa">Sawa's Page</h2>

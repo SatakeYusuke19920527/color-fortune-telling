@@ -20,5 +20,3 @@
 - Ut → utako専用ページ
 - Sw → sawa専用ページ
 - Tk → takumi専用ページ
-
-
