@@ -19,7 +19,7 @@ const TkPage = () => {
       setText1('')
     } else {
       setText1(text)
-      setText2('http://birthday-color.cafein.jp/html/'+text+'.html')
+      setText2('http://birthday-color.cafein.jp/html/' + text + '.html')
       setError('')
       console.log(text2)
     }
