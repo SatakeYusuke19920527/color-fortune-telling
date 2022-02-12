@@ -1,0 +1,26 @@
+.app-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.individual-page-utako {
+  font-size: 2rem;
+  color: springgreen;
+  cursor: pointer;
+}
+
+.individual-page-sawa {
+  font-size: 2rem;
+  color: salmon;
+  cursor: pointer;
+}
+
+.individual-page-takumi {
+  font-size: 2rem;
+  color: royalblue;
+  cursor: pointer;
+}
