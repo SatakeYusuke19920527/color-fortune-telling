@@ -1,0 +1,27 @@
+.stpage-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cherry Swash', cursive;
+  flex-direction: column;
+}
+
+.input-zone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.font-size-large {
+  font-size: 2rem;
+}
+
+.st-title {
+  width: 100vw;
+  height: 10vh;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+}

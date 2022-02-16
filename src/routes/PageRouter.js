@@ -4,6 +4,7 @@ import App from '../App';
 import UtPage from '../pages/UtPage';
 import SwPage from '../pages/SwPage';
 import TkPage from '../pages/TkPage';
+import StPage from '../pages/StPage';
 
 const PageRouter = () => {
   return (
@@ -13,6 +14,7 @@ const PageRouter = () => {
         <Route path="/utpage" element={<UtPage />} />
         <Route path="/swpage" element={<SwPage />} />
         <Route path="/tkpage" element={<TkPage />} />
+        <Route path="/stpage" element={<StPage />} />
       </Routes>
     </Router>
   );
