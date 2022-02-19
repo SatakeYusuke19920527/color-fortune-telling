@@ -1,0 +1,17 @@
+.center {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(252, 232, 193);
+    
+}
+.text-size{
+    font-size: 50px;
+}
+.tk-color{
+    color: royalblue;
+    font-weight: bolder;
+}
+.imput-size{
+    width: 10%;
+}
