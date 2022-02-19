@@ -9,9 +9,11 @@
 }
 
 .input-zone {
+  width: 30vw;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .font-size-large {

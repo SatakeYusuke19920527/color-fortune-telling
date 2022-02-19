@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app-wrapper">
       <Snowfall />
-      <h1 className="title">Welcome to USTPage<span onClick={() => movePage("stpage")}>✌️</span></h1>
+      <h1 className="title">Welcome to USTPage<span className="peace" onClick={() => movePage("stpage")}>✌️</span></h1>
       <section className="flexbox">
         <h2
           onClick={() => movePage("utpage")}
