@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
-import { Link } from 'react-router-dom'
+import "../styles/TkPage.css"
+
 
 const TkPage = () => {
   const [text, setText] = useState('')
@@ -27,10 +28,15 @@ const TkPage = () => {
 
 
   return (
-    <div>
-    <div>TkPage</div>
-    <p><input type="text" value={text} onChange={handleChange} />
-    <button onClick={hyouji}><Link to={text2}>調べる</Link></button></p>
+    <div className="center">
+      {/* <head>
+        <title>color-fortune-telling TkPage.ver</title>
+      </head> */}
+    <div><p className='text-size'>COLOR-FORTUNE-TELLING</p><p className="tk-color">Tk.ver</p></div>
+    <p><input type="text" value={text} onChange={handleChange} className='input-size'/>
+    <button onClick={hyouji}><a href={text2}>調べる</a></button></p>
+    <p>入力方法:一月一日場合</p>
+    <p>0101</p>
     </div>
   )
 }
