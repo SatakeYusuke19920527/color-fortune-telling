@@ -2,7 +2,9 @@ import React from 'react'
 
 const UtPage = () => {
   return (
-    <div></div>
+    <div>
+      <h1 className="april-a">tuna(title)</h1>
+    </div>
   )
 }
 
