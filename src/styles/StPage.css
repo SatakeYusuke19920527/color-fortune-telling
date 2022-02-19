@@ -27,3 +27,14 @@
   display: flex;
   justify-content: center;
 }
+
+/* 480px以下に適用されるCSS（スマホ用） */
+@media screen and (max-width: 480px) {
+  .input-zone {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+}

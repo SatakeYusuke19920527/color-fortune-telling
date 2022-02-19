@@ -76,7 +76,7 @@ const StPage = () => {
         variant="contained"
         color="success"
         onClick={fortuneStart}
-        sx={{ width: '20vw' }}>占う</Button>
+        sx={{ width: '40vw' }}>占う</Button>
     </div>
   )
 }
