@@ -1,0 +1,15 @@
+.aaa {
+  text-align: center;
+  color: #a22041;
+  font-size: 60;
+  font-weight: bold;
+  font-size: 100px;
+  font-family: "HiraMinProN-W6";
+  color: rgba(255, 0, 0, 0.3);
+}
+
+.aa {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(110deg, #cacaff 0%, #ffdbf6 50%, #b4ffe2 100%);
+}
