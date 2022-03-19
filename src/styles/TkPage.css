@@ -7,17 +7,22 @@
     
 }
 .text-size{
+    margin-top: opx;
     font-size: 50px;
 }
 .tk-color{
     color: rgb(95, 135, 255);
     font-weight: bolder;
 }
-.imput-size{
+.input-size{
+    margin-top: 10vh;
     width: 10%;
 }
 .buttoncolor{
     color: rgb(95, 135, 255);
     text-align: center;
+}
+.kekka{
+    background-color: white;
 }
 
