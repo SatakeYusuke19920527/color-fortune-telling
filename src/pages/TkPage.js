@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
-import "../styles/TkPage.css"
+import { createUrl } from '../lib/createUrl'
+import "../styles/TkPage.css" 
 
 
 const TkPage = () => {
@@ -14,13 +15,13 @@ const TkPage = () => {
   }
 
   const hyouji = () => {
-    console.log(text)
-    console.log(error)
-    if (!isNaN()) {
+    if (text === '') {
       setError('数値を入力してください')
-      setText1('')
     } else {
+      setText(text)
+      console.log(text)
       setText1(text)
+      console.log(text1)
       setText2('http://birthday-color.cafein.jp/html/' + text + '.html')
       setError('')
       console.log(text2)
@@ -30,13 +31,16 @@ const TkPage = () => {
 
   return (
     <div className="center">
+      <p></p>
       {/* <head>
         <title>color-fortune-telling TkPage.ver</title>
       </head> */}
-    <div><p className='text-size'>COLOR-FORTUNE-TELLING</p><p className="tk-color">Tk.ver</p></div>
+      <p className='text-size'>COLOR-AND-SIGN-FORTUNE-TELLING</p>
+    <div><p className="tk-color">Tk.ver</p></div>
     <p><label>誕生日:</label><input type="text" value={text} onChange={handleChange} className='input-size'/>
-    <button onClick={hyouji}><a href={text2} className='buttoncolor'>調べる</a></button></p>
+    <button onClick={hyouji}>調べる</button></p>
     <p>{error}</p>
+    <p>誕生日色<a href={text2} className="kekka">{text2}</a></p>
     <p>入力方法:一月一日場合</p>
     <p>0101</p>
     </div>
