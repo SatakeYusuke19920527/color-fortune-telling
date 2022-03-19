@@ -6,10 +6,8 @@ import { useState }from 'react';
 
 const UtPage = () => {
   const [text,setText] = useState('')
-
-  const [text1, setText1] = useState('')
-  const [text2, setText2] = useState('')
   const [message,setMessage] = useState('')
+  const [message2,setMessage2] = useState('')
   const [error, setError] = useState('')
   
   const handleText = (str) => {
@@ -19,11 +17,12 @@ const UtPage = () => {
   const hyoutann = () => {
     if (text === ""){
       setMessage(text)
-      setError("文字をenterせよ")
+      setError("っっっっっっっっっっd")
     }else{
-      setMessage(text)
+      setMessage2('http://birthday-color.cafein.jp/html/' + text + '.html')
       setError("")
     }}
+
 
   return (
     <div className="a">
