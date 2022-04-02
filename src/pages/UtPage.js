@@ -2,8 +2,6 @@ import React from 'react'
 import "../styles/UtPage.css"
 import { useState }from 'react';
 
-
-
 const UtPage = () => {
   const [text,setText] = useState('')
   const [message,setMessage] = useState('')
@@ -16,13 +14,14 @@ const UtPage = () => {
 
   const hyoutann = () => {
     if (text === ""){
-      setMessage(text)
       setError("っっっっっっっっっっd")
     }else{
+      setMessage(text)
       setMessage2('http://birthday-color.cafein.jp/html/' + text + '.html')
       setError("")
+      console.log(text)
+      console.log(message2)
     }}
-
 
   return (
     <div className="a">
@@ -31,7 +30,7 @@ const UtPage = () => {
   <input className="ritomasusi" type="text" onChange={(e)=>handleText(e.target.value)} />
   <button className="ritomasusi" onClick={hyoutann} type="button" value="Submit">btton</button>
   <div className="gannenn">{error}</div>
-  <div>{message}</div>
+  <div className="rrrrr">{text}</div>
   </div>
   )
   }
