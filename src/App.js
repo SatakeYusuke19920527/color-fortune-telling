@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import './App.css';
-import Snowfall from 'react-snowfall';
 
 function App() {
   const navigate = useNavigate();
@@ -9,7 +8,6 @@ function App() {
   }
   return (
     <div className="app-wrapper">
-      <Snowfall />
       <h1 className="title" onClick={() => movePage("stpage")}>Welcome to USTPage✌️</h1>
       <section className="flexbox">
         <h2

@@ -8,19 +8,18 @@ const UtPage = () => {
   const [message2,setMessage2] = useState('')
   const [error, setError] = useState('')
   
-  const handleText = (str) => {
-    setText(str)
+  const handleText = (e) => {
+    setText(() => e.target.value)
   }
 
-  const hyoutann = () => {
+  const aaa = () => {
     if (text === ""){
+      setMessage(text)
       setError("っっっっっっっっっっd")
     }else{
       setMessage(text)
-      setMessage2('http://birthday-color.cafein.jp/html/' + text + '.html')
+      setMessage('http://birthday-color.cafein.jp/html/' + text + '.html')
       setError("")
-      console.log(text)
-      console.log(message2)
     }}
 
   return (
@@ -28,9 +27,9 @@ const UtPage = () => {
       <p className="april">tuna(title)</p>
   <label className="ritomasusi">にゅ</label>
   <input className="ritomasusi" type="text" onChange={(e)=>handleText(e.target.value)} />
-  <button className="ritomasusi" onClick={hyoutann} type="button" value="Submit">btton</button>
-  <div className="gannenn">{error}</div>
-  <div className="rrrrr">{text}</div>
+  <button className="ritomasusi" onClick={aaa} type="button" value="Submit">btton</button>
+  <div style={{color : "red"}}>{error}</div>
+  <div className="rrrrr">{message}</div>
   </div>
   )
   }
