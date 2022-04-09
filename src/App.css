@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #6c2735;
+  background: linear-gradient(-135deg, #e4a972, #9941d8);
 }
 
 .title {
