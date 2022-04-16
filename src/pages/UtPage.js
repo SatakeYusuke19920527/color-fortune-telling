@@ -1,35 +1,42 @@
 import React from 'react'
 import "../styles/UtPage.css"
 import { useState }from 'react';
+import { Link } from "react-router-dom";
 
 const UtPage = () => {
   const [text,setText] = useState('')
+  const [text1,setText1] = useState('')
+  const [text2,setText2] = useState('')
   const [message,setMessage] = useState('')
+  const [message1,setMessage1] = useState('')
   const [message2,setMessage2] = useState('')
   const [error, setError] = useState('')
   
-  const handleText = (e) => {
-    setText(() => e.target.value)
+  const handleText = (text) => {
+    setText(text)
   }
 
   const aaa = () => {
-    if (text === ""){
-      setMessage(text)
+    if (text === "") {
       setError("っっっっっっっっっっd")
-    }else{
+    } else {
       setMessage(text)
-      setMessage('http://birthday-color.cafein.jp/html/' + text + '.html')
+      console.log(text)
+      setMessage1(text)
+      console.log(text1)
+      setMessage2('http://birthday-color.cafein.jp/html/' + text + '.html')
       setError("")
-    }}
+      console.log(text2)
+    }
+  }
 
   return (
     <div className="a">
       <p className="april">tuna(title)</p>
   <label className="ritomasusi">にゅ</label>
   <input className="ritomasusi" type="text" onChange={(e)=>handleText(e.target.value)} />
-  <button className="ritomasusi" onClick={aaa} type="button" value="Submit">btton</button>
-  <div style={{color : "red"}}>{error}</div>
-  <div className="rrrrr">{message}</div>
+  <button className="ritomasusi" onClick={aaa} type="button">btton</button>
+  <p>{error}</p>
   </div>
   )
   }
