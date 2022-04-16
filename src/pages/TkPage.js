@@ -36,7 +36,9 @@ const TkPage = () => {
   const hyouji1 = () => {
     if (text3 === '') {
       setError('数値を入力してください')
-    } else {
+    // } if(text3 === "sign") {
+    //   setError('選択をしてください')
+    }else{
       setText4('https://fortune.yahoo.co.jp/12astro/' + text3 )
       setError('')
       console.log(text3)
@@ -76,7 +78,9 @@ const TkPage = () => {
     <p>0101</p>
     <p>{error}</p>
     <label>星座:</label>
-  <select  className="select" onChange={handleChange1} value={text3}　>
+  <select  className="select" onChange={handleChange1}　defaultValue={{label: '選んでください', value: ''}}>
+    {/* <option value='sign'>星座</option> */}
+    <option value={"default"} disabled>選んでください</option>
     <option value='aries'>牡羊座</option>
     <option value='taurus'>牡牛座</option>
     <option value='gemini'>双子座</option>
