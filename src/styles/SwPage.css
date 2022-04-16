@@ -16,3 +16,17 @@
 .aaaa {
   text-align: center;
 }
+
+.siraberu {
+  /* font-weight: bold; */
+  font-size: 30px;
+  font-family: "HiraMinProN-W6";
+  color: rgba(234, 0, 255, 0.3);
+}
+
+.siraberuu {
+  /* font-weight: bold; */
+  font-size: 30px;
+  font-family: "HiraMinProN-W6";
+  color: rgba(234, 0, 255, 0.3);
+}
