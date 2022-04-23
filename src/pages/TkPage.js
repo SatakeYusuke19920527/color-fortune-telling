@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-// import Select from 'react-select'
+import Select from 'react-select'
 // import { Link } from 'react-router-dom'
 // import { createUrl } from '../lib/createUrl'
 import "../styles/TkPage.css" 
@@ -16,9 +16,9 @@ const TkPage = () => {
   const handleChange = (e) => {
     setText(() => e.target.value)
   }
-  const handleChange1 = (a) => {
-    setText3(() => a.target.value)
-  }
+  // const handleChange1 = (a) => {
+  //   setText3(() => a.target.value)
+  // }
 
   const hyouji = () => {
     if (text === '') {
@@ -38,6 +38,7 @@ const TkPage = () => {
       setError('数値を入力してください')
     // } if(text3 === "sign") {
     //   setError('選択をしてください')
+    console.log(text3)
     }else{
       setText4('https://fortune.yahoo.co.jp/12astro/' + text3 )
       setError('')
@@ -46,20 +47,20 @@ const TkPage = () => {
     }
   }
 
-  // const options = [
-  //   { value: 'aries', label: '牡羊座' },
-  //   { value: 'taurus', label: '牡牛座' },
-  //   { value: 'gemini', label: '双子座' },
-  //   { value: 'cancer', label: '蟹座' },
-  //   { value: 'leo', label: '獅子座' },
-  //   { value: 'virgo', label: '乙女座' },
-  //   { value: 'libra', label: '天秤座' },
-  //   { value: 'scorpio', label: '蠍座' },
-  //   { value: 'sagittarius', label: '射手座' },
-  //   { value: 'capricorn', label: '山羊座' },
-  //   { value: 'aquarius', label: '水瓶座' },
-  //   { value: 'pisces', label: '魚座' },
-  // ]
+  const options = [
+    { value: 'aries', label: '牡羊座' },
+    { value: 'taurus', label: '牡牛座' },
+    { value: 'gemini', label: '双子座' },
+    { value: 'cancer', label: '蟹座' },
+    { value: 'leo', label: '獅子座' },
+    { value: 'virgo', label: '乙女座' },
+    { value: 'libra', label: '天秤座' },
+    { value: 'scorpio', label: '蠍座' },
+    { value: 'sagittarius', label: '射手座' },
+    { value: 'capricorn', label: '山羊座' },
+    { value: 'aquarius', label: '水瓶座' },
+    { value: 'pisces', label: '魚座' },
+  ]
   
 
 
@@ -78,8 +79,8 @@ const TkPage = () => {
     <p>0101</p>
     <p>{error}</p>
     <label>星座:</label>
-  <select  className="select" onChange={handleChange1}　defaultValue={{label: '選んでください', value: ''}}>
-    {/* <option value='sign'>星座</option> */}
+  {/* <select  className="select" onChange={handleChange1}　defaultValue={{label: '選んでください', value: ''}}>
+    <option value='sign'>星座</option>
     <option value={"default"} disabled>選んでください</option>
     <option value='aries'>牡羊座</option>
     <option value='taurus'>牡牛座</option>
@@ -93,7 +94,12 @@ const TkPage = () => {
     <option value='capricorn'>山羊座</option>
     <option value='aquarius'>水瓶座</option>
     <option value='pisces'>魚座</option>
-  </select>
+  </select> */}
+  <Select
+  options={options}
+  onChange={(value)=>{setText3(value.value)}}
+  >
+  </Select>
     <button onClick={hyouji1}>調べる</button>
     <p>星座占い:<a href={text4} className="kekka">{text4}</a></p>
     </div>
