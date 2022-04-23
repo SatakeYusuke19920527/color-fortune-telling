@@ -27,15 +27,16 @@ const UtPage = () => {
       setMessage2('http://birthday-color.cafein.jp/html/' + text + '.html')
       setError("")
       console.log(text2)
+      window.location.href = `http://birthday-color.cafein.jp/html/${text}.html`; // 通常の遷移
     }
   }
 
   return (
     <div className="a">
-      <p className="april">tuna(title)</p>
+      <p className="april">Utuna(Utitle)</p>
   <label className="ritomasusi">にゅ</label>
   <input className="ritomasusi" type="text" onChange={(e)=>handleText(e.target.value)} />
-  <button className="ritomasusi" onClick={aaa} type="button">btton</button>
+  <button className="ritomasusi" onClick={aaa}>btton</button>
   <p>{error}</p>
   </div>
   )
