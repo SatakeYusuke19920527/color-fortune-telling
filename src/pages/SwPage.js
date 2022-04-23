@@ -48,10 +48,12 @@ const SwPage = () => {
     　<div className="aa">
       <div className="aaa"> Birthday Color</div>
       <div className="aaaa">
-      <div　className="siraberu">〜月〜<input onChange={handleChange} type="number" value={siraberu} min="1" max="12"placeholder="月"/></div>
-      <div　className="siraberuu">〜日〜<input onChange={handleChange1} type="number" value={siraberuu} min="1" max="31"placeholder="日"/></div>
+        <div className="siraberu"><p className="tukituki">〜月〜</p><input onChange={handleChange} type="number"
+          value={siraberu} min="1" max="12" placeholder="月" maxlength="2" className="tuki"/></div>
+        <div className="siraberuu"><p className="hihi">〜日〜</p><input onChange={handleChange1} type="number"
+          value={siraberuu} min="1" max="31" placeholder="日" className="hi" /></div>
         {error}
-        <br /><button onClick={sira}>牡丹</button>
+        <br /><button onClick={sira} className="botann">牡丹</button>
     </div>
       </div>
   );
